@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document rubrika</title>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/daf6ff33d9.js" crossorigin="anonymous"></script>
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<!-- css -->
+    <style>
+
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: lime;
+    color: black;
+
+}
+
+/* BOTTONI */
+
+.btn{
+border-radius: 20px 2px 6px;
+border-style: double;
+border: 2px;
+  display: block;
+    cursor: pointer;
+
+}
+
+.btn-custom { 
+    background-color: yellow;
+
+}
+  .btn-toggle {
+    color: black;
+    background-color: gray; 
+    margin-bottom: 10px;
+  }
+  .btn-delete {
+    color: black;
+    background-color: aqua;
+  }
+  .btn-edit { background-color: #ffc107; color: black;}
+
+
+.btn:hover {
+
+color: tomato;
+border: 3px;
+border-style:ouset;
+background-color: wheat;
+}
+
+
+
+
+.cuntom-shadow{
+    box-shadow: 2px 2px 2px 4px  red, -2px -2px -4px  red;
+
+}
+
+
+/* CARDS */
+
+.card-custom{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+box-shadow: yellow;
+height: 40px;
+
+
+}
+
+
+.sotto_title {
+    color: white;
+    font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: overline;
+
+}
+p {
+    text-align: center;
+    font-family: cursive;
+    color: purple;
+    margin: 0;
+    padding: 0;
+}
+
+    </style>
+
+</head>
+<body>
+
+<!-- INIZIO HTML-->
+
+
+<header class="container mt-4">
+
+
+    <div class="row">
+        <div class="col-12">
+
+            <h1>Rubrica Telefonica!</h1>
+        </div>
+    </div>
+</header>
+
+
+<main class="container">
+    
+<div class="row">
+        <div class="col-md-6">
+
+
+
+    <h2 class="sotto_title">Aggiungi i contatti:</h2>
+
+</div>
+</div>
+
+
+
+<section class="container mt-4 py-4">
+
+ 
+
+<div class="text-center my-4">
+  <!-- Bottone mostrami contatto -->
+    <button id="btnToggle" class="btn btn-toggle">Mostra Contatti</button>
+
+</div>
+
+<!-- INPUT NOME -->
+    <div class="input_name">
+<label for="text_Btn">
+        <input type="text" id="inputName" placeholder="Nome" class="nomeInput mt-5 mb-2">
+</label>
+        </div>
+
+<!-- INPUT -->
+        <div class="input_phone">
+     <label for="text-Btn">
+        <input type="text" id="inputPhone" placeholder="Numero" class="inputPhone mt-2">
+        </label>
+    
+    </div>
+        
+
+        <!-- BOTTONE -->
+        <div class="btnAdd">
+     <div>Crea Contatto
+  <button id="addBtn" class="btn btn-custom mt-4">
+                            Aggiungi Contatti +
+                        
+    </button>
+</div> 
+       
+    </div>
+
+<!-- BUTTON MODIFICHI -->
+
+<button id="editBtn" class="btn btn-edit">Modifica Contatto</button>
+
+<!-- BOTTONE ELIMINAZIONE -->
+   <button id="deleteBtn" class="btn btn-delete mt-2">Elimina: <i class="fa-solid fa-trash"></i></button>
+        
+
+   
+</section>
+        
+
+<!-- DIV VUOTI PER INSERIMENTI -->
+    </div>
+    <div class="btnAdd_contacts btn-custom"></div>
+
+<section class="container-fluid my-5">
+    <div class="row" cols="50" id="contactContainer"></div>
+</section>
+
+</div>
+</div>
+
+</section>
+
+</main>
+
+
+
+<script src="./main.js"></script>
+
+
+<!-- js -->
+<!-- CamelCase per le propieta' di stile -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    
+</body>
+</html>
