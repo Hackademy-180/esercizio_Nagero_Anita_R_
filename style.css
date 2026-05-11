@@ -1,0 +1,196 @@
+h1 {
+       text-align: center;
+   }
+
+   body {
+       background-color: wheat;
+       color: black;
+
+   }
+
+   /* BOTTONI */
+
+
+#editBtn,#deleteBtn,#addBtn{
+    padding: 4px;
+    padding-right: 4px;
+    margin-top: 5px;
+    border-radius: 50px 7px 23px;
+        border-style: double;
+        border: 5px outset red;
+        display: block;
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+      justify-content: center;
+    
+}
+
+#btnToggle{
+    text-decoration: solid;
+    border: 9px inset darkblue;
+    background-color: orange;
+    color: cyan;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 82px;
+    box-sizing:inherit;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+
+.btn-add{
+    background-color: greenyellow;
+    color: black;
+
+}
+
+.btn-edit {
+   
+    background-color: paleturquoise;
+    color: black;
+}
+
+
+
+ .btn-delete {
+     color: black;
+     background-color: aqua;
+ }
+
+
+
+  
+   
+
+   .btn:hover {
+
+       color: tomato;
+       border: 3px;
+       border-style: ouset;
+       background-color: wheat;
+   }
+
+
+
+
+   .btn-shadow {
+       box-shadow: 2px 2px 2px 4px red, -2px -2px -4px red;
+
+   }
+
+
+   /* SOTTOTITOLO */
+   .sotto_title {
+       color: white;
+       font-weight: bold;
+       text-transform: uppercase;
+       text-decoration: overline;
+
+   }
+
+   p {
+       text-align: center;
+       font-family: cursive;
+       color: purple;
+       margin: 0;
+       padding: 0;
+   }
+
+/* INPUT */
+#inputName,
+ #inputPhone {
+    content: 10px 10px;
+
+    padding-top: 15px;
+    padding: 10px 15px;
+    border: 3px outset green;
+    border-radius: 80px 92px;
+     align-items: center;
+     background-color: pink;
+    color: darkblue;
+}
+
+.container_input {
+    background-color: aliceblue;
+    width: 50px;
+    height: 70px;
+
+}
+
+/* FORM */
+.form_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form_buttons > button{
+    flex:1 ;
+    gap: 13px;
+    padding-top: 3px;
+    margin-top: 3px;
+    border: 3px;
+    padding: 4px;
+}
+
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+.sez_form{
+    gap: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px 20px;;
+}
+
+
+
+.page-grid{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 15px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+   /* CARDS */
+
+   .contacContainer {
+   margin-left: 8px;
+    gap: 33px;
+    align-content: space-around;
+    justify-content: stretch;
+     display: flex;
+   
+   }
+
+   .sez_contacts {
+    
+display: flex;
+    
+   }
+
+   .contact-card{
+    display: grid;
+   
+    justify-items: stretch;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    border: 1px double red;
+    background-color: darkkhaki;
+
+   }
