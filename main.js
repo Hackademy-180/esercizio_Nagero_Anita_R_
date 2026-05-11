@@ -6,6 +6,8 @@
 let nomeInput = document.querySelector('#inputName');
 let telefonoInput = document.querySelector('#inputPhone');
 let btnAdd = document.querySelector('#addBtn');
+let btnEdit = document.querySelector('#editBtn');
+let btnDelete = document.querySelector('#deleteBtn');
 let btnToggle = document.querySelector('#btnToggle');
 let container = document.querySelector('#contactContainer');
 
@@ -14,6 +16,9 @@ let container = document.querySelector('#contactContainer');
 
 //Lista di Contatti, per esempio; 
 let contacts = [
+
+    //oppure parti con array vuoto
+
     {
         nome: "Anita Nagero" , telefono : "3281990000"}
 ,  
@@ -24,7 +29,7 @@ let contacts = [
 
 
 
-//Funzione per (reindirizzare i contatti)
+//Funzione per (stmpare i contatti)
 function renderContacts() {
 
     //svuotare contenitore
@@ -33,16 +38,16 @@ function renderContacts() {
     contacts.forEach((contatto, index) =>
 {
     let div = document.createElement('div');
-    div.className = 'col-12 col-md-6 mb-3';
+    div.className = 'col-8 col-md-3 mb-3';
     div.innerHTML = `
-       <article class="contact-card">
-   
+       
+<div class="card-contatto">
             <p> Nome: ${contatto.nome} </p>
             <p> Telefono: ${contatto.telefono} </p>
              <button class="edit-btn" onclick="editContact(${index})">Modifica contatto</button>
         <button onclick="deleteContact(${index})">Elimina</button>
+     </div>
      
-      </article>
             `;
 
     container.appendChild(div);
@@ -68,11 +73,17 @@ btnAdd.addEventListener('click', () => {
     //all'array li aggiungo;
 
 contacts.push({
-    nome: nome,
-    telefono: telefono
+   nome,
+   telefono
 });
 
+ //pulisci reset_inputs
+    nomeInput.value = '';
+   telefonoInput.value = '';
 
+            renderContacts();
+
+            });
 
  //MOSTRA / NASCONDI
 
@@ -85,17 +96,20 @@ contacts.push({
     //FUNZIONE ELIMINAZIONE
 
     function deleteContact(index) {
-        console.log('index:', index);
-if(confirm("Sei sicuro di voler eliminare questo contatto?")){
-        //RIMUOVO ELEMENT BY ARRAY
-        contacts.splice(index, 1);
-        
 
-        //FINE E STAMPA F.
-        renderContacts();
-    }
-}
+          console.log('index:', index);
    
+ if(confirm("Sei sicuro di voler eliminare questo contatto?")){
+  
+     
+     //RIMUOVO ELEMENT BY ARRAY
+     
+     contacts.splice(index, 1);
+     //FINE E STAMPA F.
+        renderContacts();
+      
+ }
+}
 
     //FUNZIONW MODIFICA contatto-i
 
@@ -107,20 +121,16 @@ if(confirm("Sei sicuro di voler eliminare questo contatto?")){
 
                 contacts[index].nome = nuovoNome.trim() || contacts[index].nome;
                 contacts[index].telefono = nuovoTelefono.trim() || contacts[index].telefono;
-                renderContacts();
+                renderContacts('');
+
+                
             }
         }
 
-   //pulisci reset_inputs
-    nomeInput.value = '';
-   telefonoInput.value = '';
-
-            renderContacts();
-
-            });
+  
     //FINISCE LA FUNZIONE
     renderContacts();
 
     //Parte all'avvio; 
 
-  
+    

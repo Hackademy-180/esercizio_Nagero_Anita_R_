@@ -1,10 +1,14 @@
 h1 {
+    font-weight: bolder;
+    font-size: 100x ;
+
+       color: black;
        text-align: center;
    }
 
    body {
-       background-color: wheat;
-       color: black;
+       background-color: white;
+     
 
    }
 
@@ -12,18 +16,16 @@ h1 {
 
 
 #editBtn,#deleteBtn,#addBtn{
-    padding: 4px;
-    padding-right: 4px;
-    margin-top: 5px;
-    border-radius: 50px 7px 23px;
-        border-style: double;
-        border: 5px outset red;
-        display: block;
-        height: 100px;
-        width: 100px;
-        cursor: pointer;
-      justify-content: center;
-    
+            padding: 4px;
+            padding-right: 4px;
+            margin-top: 5px;
+            border-radius: 0px 12px 5px;
+            border-style: outset;
+             border: 4px outset red;
+             display: block;
+            cursor: pointer;
+            justify-content: center;
+            
 }
 
 #btnToggle{
@@ -34,20 +36,21 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     height: 82px;
-    box-sizing:inherit;
-    border-radius: 200px;
+    border-radius: 280px;
     cursor: pointer;
 }
 
 
 .btn-add{
+   
     background-color: greenyellow;
+    font-weight: bold;
     color: black;
 
 }
 
 .btn-edit {
-   
+   font-weight: bold;
     background-color: paleturquoise;
     color: black;
 }
@@ -55,6 +58,7 @@ h1 {
 
 
  .btn-delete {
+    font-weight: bold;
      color: black;
      background-color: aqua;
  }
@@ -90,34 +94,41 @@ h1 {
 
    }
 
-   p {
-       text-align: center;
+   .paragrafo  {
+        
+margin-left: 1px;
+    font-weight: bold;
+      gap:4px;
+     text-align: start;
        font-family: cursive;
        color: purple;
-       margin: 0;
-       padding: 0;
+     
    }
 
-/* INPUT */
+
+
+
+/* INPUT nomme e telefono */
 #inputName,
  #inputPhone {
     content: 10px 10px;
-
     padding-top: 15px;
     padding: 10px 15px;
+    size: 20px 30px;
+        border-style: double;
     border: 3px outset green;
-    border-radius: 80px 92px;
+    border-radius: 22px 66px;
      align-items: center;
      background-color: pink;
     color: darkblue;
 }
 
-.container_input {
-    background-color: aliceblue;
-    width: 50px;
-    height: 70px;
 
-}
+  
+   
+
+
+
 
 /* FORM */
 .form_container{
@@ -125,51 +136,38 @@ h1 {
     flex-direction: column;
     gap: 10px;
     align-items: stretch;
-  
+    border: 5px;
+  border-style: inset;
     background-color: wheat;
     padding: 20px;
     border-radius: 10px;
 }
 
-.form_buttons > button{
-    flex:1 ;
-    gap: 13px;
-    padding-top: 3px;
-    margin-top: 3px;
-    border: 3px;
-    padding: 4px;
-}
+/* FORM SEZIONE PER STILIZZARE */
 
 
-.form_group{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+ .form_group{
+    display: block;
+    gap:6px;
 
 }
+
+ 
 .sez_form{
     gap: 13px;
-    display: flex;
+    display:block;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    padding: 40px 20px;;
-}
+    background-color:red;
+    padding: 40px 20px;
+} 
 
 
-
-.page-grid{
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-gap: 15px;
-    padding: 20px;
-    min-height: 100vh;
-}
 
    /* CARDS */
 
-   .contacContainer {
-   margin-left: 8px;
+   #contactContainer {
+    background-color: transparent;
     gap: 33px;
     align-content: space-around;
     justify-content: stretch;
@@ -178,19 +176,34 @@ h1 {
    }
 
    .sez_contacts {
-    
-display: flex;
+    border-radius: 6px 17px 88px;
     
    }
 
-   .contact-card{
-    display: grid;
-   
+   .card-contatto{
+    display: flex;
+    min-width: 220px;
+    color: darkgreen;
+    font-size: 20px;
+ font-weight: bold;
+    text-align: center;
+    border: 2px dotted white; 
+   border-radius: 20px;
     justify-items: stretch;
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
+    gap: 9px;
     border: 1px double red;
     background-color: darkkhaki;
 
    }
+
+
+   .hr_spezza{
+
+    box-shadow: purple;
+    height: 4px;
+    width: 1044px;
+    background:red; 
+    border-style: inset red;
+   } 

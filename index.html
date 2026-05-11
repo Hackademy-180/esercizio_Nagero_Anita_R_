@@ -17,7 +17,7 @@
 
 </head>
 <body>
-<div class="page-grid">
+<div class="page">
 <!--Header-->
 <header class="container mt-4">
 
@@ -40,26 +40,26 @@
             <!-- form -->
 <form class="form_container">
 <div class="form-group">
-        <h2 class="sotto_title">Aggiungi i contatti:</h2>
+        <h2 class="sotto_title"><i class="fa-solid fa-phone"></i>Aggiungi i contatti:</h2>
  
-<label for="inputName" class="form_label">Nome:</label>
-    <input type="text" id="inputName" class="inputName" placeholder="Nome">
+<label for="inputName" class="form_label fw-bold">Nome:</label>
+    <input type="text" id="inputName" class="input Name" placeholder="Nome">
         
 
-<label for="inputPhone" class="form_label">Numero:</label>
-<input type="text" id="inputPhone" class="inputPhone" placeholder="Numero">
+<label for="inputPhone" class="form_label fw-bold">Numero:</label>
+<input type="text" id="inputPhone" class="input Phone" placeholder="Numero">
       
 
 <!-- BOTTONE -->
-<div class="BTN_btn mt-4 d-flex justify-content-center">
-    <p>Crea Contatto</p>
+<div class="BTN_btn mt-4 d-flex justify-content-start">
+    <p class="paragrafo">Crea Contatto</p>
 <button id="addBtn" class="btn btn-add" type="button">
-            Aggiungi Contatti +
+         Aggiungi Contatti +
 </button>
 <!-- BUTTON MODIFICHI -->
-<button id="editBtn" class="btn btn-edit" type="button">Modifica Contatto</button>
+<button id="editBtn" class="btn btn-edit" type="button" data-action="edit">Modifica Contatto</button>
 <!-- BOTTONE ELIMINAZIONE -->
-<button id="deleteBtn" class="btn btn-delete" type="button">Elimina: <i class="fa-solid fa-trash"></i></button>
+<button id="deleteBtn" class="btn btn-delete" type="button" data-action="delete">Elimina: <i class="fa-solid fa-trash"></i></button>
 </div>
 </div>
 </div>
@@ -76,22 +76,23 @@
 </div>
 <section>
     <div class="col-md-8">
-        <h2 class="sotto_title text-center mb-4 mt-5 py-6">I tuoi contatti</h2>
+        <h2 class="sotto_title text-center mb-4 mt-5 py-6">I tuoi contatti <i class="fa-solid fa-phone"></i></h2>
+        <hr class="hr_spezza">
+        
     </div>
 </div>
 </section>
-        
-
-<!-- DIV VUOTI PER INSERIMENTI -->
-    
-    <article class="contact-card">
-    <section class="sez_contacts my-5 mt-5">
+<!-- div per i contatti -->
+ 
+    <section class="sez_contacts my-5 mt-4">
     <div class="row"  id="contactContainer"></div>
-    </article>
+  
 </section>
 
 </div>
 </div>
+
+
 </div>
 </main>
 
