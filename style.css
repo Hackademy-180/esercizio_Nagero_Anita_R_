@@ -1,32 +1,17 @@
 h1 {
-    font-weight: bolder;
-    font-size: 100x ;
-
+    font-weight: bold;
        color: black;
        text-align: center;
+       text-shadow: 3px 2px 4px yellowgreen;
    }
 
    body {
-       background-color: white;
+       background-color: darkgreen;
      
 
    }
 
-   /* BOTTONI */
-
-
-#editBtn,#deleteBtn,#addBtn{
-            padding: 4px;
-            padding-right: 4px;
-            margin-top: 5px;
-            border-radius: 0px 12px 5px;
-            border-style: outset;
-             border: 4px outset red;
-             display: block;
-            cursor: pointer;
-            justify-content: center;
-            
-}
+   
 
 #btnToggle{
     text-decoration: solid;
@@ -39,50 +24,6 @@ h1 {
     border-radius: 280px;
     cursor: pointer;
 }
-
-
-.btn-add{
-   
-    background-color: greenyellow;
-    font-weight: bold;
-    color: black;
-
-}
-
-.btn-edit {
-   font-weight: bold;
-    background-color: paleturquoise;
-    color: black;
-}
-
-
-
- .btn-delete {
-    font-weight: bold;
-     color: black;
-     background-color: aqua;
- }
-
-
-
-  
-   
-
-   .btn:hover {
-
-       color: tomato;
-       border: 3px;
-       border-style: ouset;
-       background-color: wheat;
-   }
-
-
-
-
-   .btn-shadow {
-       box-shadow: 2px 2px 2px 4px red, -2px -2px -4px red;
-
-   }
 
 
    /* SOTTOTITOLO */
@@ -123,10 +64,15 @@ margin-left: 1px;
     color: darkblue;
 }
 
-
-  
+.card{
+    border:3px cyan;
+    border-radius: 15px;
+}
    
-
+.card-title{
+    font-weight: bold;
+  
+}
 
 
 
@@ -175,10 +121,7 @@ margin-left: 1px;
    
    }
 
-   .sez_contacts {
-    border-radius: 6px 17px 88px;
-    
-   }
+  
 
    .card-contatto{
     display: flex;
